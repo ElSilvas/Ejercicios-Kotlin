@@ -1,0 +1,59 @@
+1.Programa para calcular el área de un triángulo:
+
+fun main() {
+    println("Ingrese la base del triángulo:")
+    val base = readLine()!!.toDouble()
+    println("Ingrese la altura del triángulo:")
+    val altura = readLine()!!.toDouble()
+    val area = 0.5 * base * altura
+    println("El área del triángulo es: $area")
+}
+
+2.Programa para verificar si un número es par o impar:
+
+fun main() {
+    println("Ingrese un número:")
+    val numero = readLine()!!.toInt()
+    if (numero % 2 == 0) {
+        println("El número es par")
+    } else {
+        println("El número es impar")
+    }
+}
+
+3.Programa para imprimir los primeros N números naturales:
+
+fun main() {
+    println("Ingrese un número:")
+    val n = readLine()!!.toInt()
+    println("Los primeros $n números naturales son:")
+    for (i in 1..n) {
+        println(i)
+    }
+}
+
+4.Programa para calcular el factorial de un número:
+
+fun main() {
+    println("Ingrese un número:")
+    val numero = readLine()!!.toInt()
+    var factorial = 1L
+    for (i in 1..numero) {
+        factorial *= i.toLong()
+    }
+    println("El factorial de $numero es: $factorial")
+}
+
+5.Programa para invertir un número entero:
+
+fun main() {
+    println("Ingrese un número entero:")
+    var numero = readLine()!!.toInt()
+    var numeroInvertido = 0
+    while (numero != 0) {
+        val digito = numero % 10
+        numeroInvertido = numeroInvertido * 10 + digito
+        numero /= 10
+    }
+    println("El número invertido es: $numeroInvertido")
+}
